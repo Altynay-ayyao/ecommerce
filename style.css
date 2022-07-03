@@ -108,6 +108,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0; /*hide all the div elements*/
+  transition: opacity 5s;
 }
 
 .slideshow div.change {

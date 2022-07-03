@@ -4,23 +4,32 @@ const slideshowDivs = () => {
     const div = document.createElement('div');
     div.style.backgroundImage = `url(/images/slideshow/section-1-bg-${i}.jpg)`;
 
-    i === 1 && div.classList.add('change');
+    i === 1 && div.classList.add('change'); //i = 1 means it is the frist iteration.
 
     document.querySelector('.slideshow').appendChild(div);
   }
 };
 
+slideshowDivs();
+
 const divs = document.querySelectorAll('.slideshow div');
+
+let counter = 1;
 const slideshow = () => {
   setInterval(() => {
+    counter++;
     const div = document.querySelector('.slideshow .change');
     div.classList.remove('change');
 
-    div.nextElementSibling.classList.add('change');
-  }, 1000);
+    if (counter < divs.length) {
+      div.nextElementSibling.classList.add('change');
+    } else {
+      divs[0].classList.add('change');
+      counter = 1;
+    }
+  }, 2000);
 };
 
 slideshow();
 
-slideshowDivs();
 //End of Slideshow
