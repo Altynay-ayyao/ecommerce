@@ -60,9 +60,95 @@ html {
   transform: scale(1.2);
 }
 
+/*********Cube*********/
+.cube-container {
+  height: 30vh;
+  width: 15vw;
+  position: absolute;
+  top: 55vh;
+  left: 10vw;
+  transform: translate(-50%, -50%);
+  perspective: 1000px;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 15vw;
+  /*transform: rotate(-90deg);*/
+  transform-style: preserve-3d;
+  /*  transform: rotateY(130deg); */
+  animation: animate 5s infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(45deg) rotateY(-45deg);
+  }
+  25% {
+    transform: rotateX(-45deg) rotateY(-45deg);
+  }
+  50% {
+    transform: rotateX(45deg) rotateY(45deg);
+  }
+  75% {
+    transform: rotateX(-45deg) rotateY(45deg);
+  }
+  100% {
+    transform: rotateX(45deg) rotateY(-45deg);
+  }
+}
+
+.card {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  padding: 40px 0px;
+  color: white;
+  background-color: midnightblue;
+  border: 2px solid palevioletred;
+  font-size: 32px;
+  background: url(./images/one.jpeg) no-repeat center center/cover;
+  border: none;
+  font-size: 32px;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+#front {
+  transform: translateZ(50px);
+}
+#back {
+  transform: translateZ(-50px);
+}
+
+#left {
+  right: 50px;
+  transform: rotateY(-90deg);
+}
+
+#right {
+  left: 50px;
+  transform: rotateY(90deg);
+}
+
+#top {
+  bottom: 50px;
+  transform: rotateX(90deg);
+}
+
+#bottom {
+  top: 50px;
+  transform: rotateX(-90deg);
+}
+
+/*********End of Cube*********/
+
 /*Banner*/
 .section-1-banner {
   flex-direction: column;
+  align-items: flex-end;
 }
 
 .section-1-banner h1 {
@@ -76,7 +162,7 @@ html {
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.6rem;
-  margin: 3rem 0 2rem 0;
+  margin: 3rem 0 2rem 15vw;
 }
 
 .section-1-banner button {
