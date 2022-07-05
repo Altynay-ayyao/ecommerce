@@ -212,9 +212,24 @@ html {
 }
 
 .section-2-heading {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 200;
+  padding: 30px;
   color: black;
+  position: relative;
+}
+
+.section-2-heading::before {
+  content: '';
+  width: 150%;
+  height: 30vw;
+  background: linear-gradient(#d8eadf, white);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skewX(-50deg);
+  transform-origin: left top;
+  z-index: -5;
 }
 
 img {
@@ -232,26 +247,30 @@ img {
   display: flex;
 }
 .new_painting_btn {
-  width: 6rem;
-  height: 6rem;
+  width: 8rem;
+  height: 8rem;
   background-image: linear-gradient(
     to bottom,
     rgb(56, 33, 33) 50%,
-    rgb(73, 30, 30)
+    rgb(177, 115, 115)
   );
   margin: 0 13rem;
   border-radius: 50%;
 }
 
-.new_painting_btn::after {
-  content: '';
-  width: 50%;
-  height: 50%;
-  display: block;
-  border: 0.1rem solid #dcd7c9;
-  border-radius: 1rem;
+.new_painting_btn span {
+  position: absolute;
+
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: white;
+  width: max-content;
+
+  transform: scale(0);
 }
 
-.new_painting_btn span {
-  display: none;
+.new_painting_btn:hover span {
+  transform: scale(1);
 }
