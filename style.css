@@ -274,3 +274,35 @@ img {
 .new_painting_btn:hover span {
   transform: scale(1);
 }
+
+/************Gallery*****************/
+.big {
+  width: 300px;
+  height: auto;
+}
+
+.all_arts {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h2 {
+  margin-top: 150px;
+  font-size: 200%;
+}
+
+.gallery {
+  margin: 10px 5px;
+}
+
+.gallery img {
+  transition: 1s;
+  padding: 15px;
+  width: 200px;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
