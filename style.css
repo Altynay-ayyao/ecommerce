@@ -343,3 +343,69 @@ img {
   right: -10px;
   margin-bottom: 6px;
 }
+
+#newsletter {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.newstext > * {
+  padding: 10px;
+  margin: 10px;
+  margin-left: 30px;
+}
+
+.newstext h4 {
+  font-size: 18px;
+}
+
+/* .form > * {
+  padding: 10px;
+  margin: 10px;
+  margin-right: 30px;
+} */
+
+.form button {
+  background-color: #ff9f29;
+  border: none;
+  white-space: nowrap;
+  padding: 8.3px;
+}
+
+.form button:hover {
+  background-color: #d54f15;
+  color: white;
+}
+
+#newsletter p span {
+  color: #6cc4a1;
+}
+
+#newsletter input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+#newsletter .form {
+  display: flex;
+  margin: 30px;
+}
+
+footer {
+  background-color: #b0e7d1;
+}
+
+footer img {
+  width: 70px;
+  height: auto;
+}
