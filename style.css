@@ -41,7 +41,7 @@ html {
   position: absolute;
   top: 1.5rem;
   left: 3.5rem;
-  width: 6rem;
+  width: 12rem;
   height: auto;
 }
 
@@ -54,7 +54,7 @@ html {
 
 .navbar-link {
   color: black;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   display: inline-block;
   margin: 0 2rem;
   transition: transform 0.5s;
@@ -76,8 +76,8 @@ html {
 }
 
 .box {
-  height: 100px;
-  width: 100px;
+  height: 250px;
+  width: 250px;
   position: absolute;
   left: 15vw;
   /*transform: rotate(-90deg);*/
@@ -105,10 +105,10 @@ html {
 }
 
 .card {
-  height: 100px;
-  width: 100px;
+  height: 250px;
+  width: 250px;
   text-align: center;
-  padding: 40px 0px;
+  padding: 75px 0px;
   color: white;
   background-color: midnightblue;
   border: 2px solid palevioletred;
@@ -121,29 +121,29 @@ html {
 }
 
 #front {
-  transform: translateZ(50px);
+  transform: translateZ(125px);
 }
 #back {
-  transform: translateZ(-50px);
+  transform: translateZ(-125px);
 }
 
 #left {
-  right: 50px;
+  right: 125px;
   transform: rotateY(-90deg);
 }
 
 #right {
-  left: 50px;
+  left: 125px;
   transform: rotateY(90deg);
 }
 
 #top {
-  bottom: 50px;
+  bottom: 125px;
   transform: rotateX(90deg);
 }
 
 #bottom {
-  top: 50px;
+  top: 125px;
   transform: rotateX(-90deg);
 }
 
@@ -208,7 +208,7 @@ html {
 /*******************Section 2*************************/
 .section-2 {
   width: 100%;
-  height: 120vh;
+  height: auto;
   padding: 10vh 0;
   display: flex;
   flex-direction: column;
@@ -226,7 +226,7 @@ html {
 .section-2-heading::before {
   content: '';
   width: 150%;
-  height: 30vw;
+  height: 10vh;
   background: linear-gradient(#d8eadf, white);
   position: absolute;
   top: 0;
@@ -242,43 +242,6 @@ img {
   margin: 30px;
 }
 
-/* span {
-  margin: 0 140px;
-}
- */
-/*************section 2 buttons**************/
-.new_painting_btns {
-  display: flex;
-}
-.new_painting_btn {
-  width: 8rem;
-  height: 8rem;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(56, 33, 33) 50%,
-    rgb(177, 115, 115)
-  );
-  margin: 0 13rem;
-  border-radius: 50%;
-}
-
-.new_painting_btn span {
-  position: absolute;
-
-  font-size: 1rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  color: white;
-  width: max-content;
-
-  transform: scale(0);
-}
-
-.new_painting_btn:hover span {
-  transform: scale(1);
-}
-
 /************Shop content*****************/
 #product1 {
   text-align: center;
@@ -291,7 +254,7 @@ img {
   flex-wrap: wrap;
 }
 #product1 .pro {
-  width: 20%;
+  width: 30%;
   height: auto;
   min-width: 250px;
   padding: 10px 12px;
@@ -388,7 +351,7 @@ img {
 }
 
 #newsletter input {
-  height: 3.125rem;
+  height: 4rem;
   padding: 0 1.25em;
   font-size: 14px;
   width: 100%;
@@ -398,14 +361,77 @@ img {
 
 #newsletter .form {
   display: flex;
-  margin: 30px;
+  margin: 80px;
 }
 
+/***********************footer*************************/
 footer {
-  background-color: #b0e7d1;
+  background-color: #caecde;
 }
 
-footer img {
-  width: 70px;
+.col-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .footer-logo {
+  width: 100px;
   height: auto;
+}
+
+footer .col-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.col {
+  margin-top: 50px;
+  font-size: 1.8rem;
+}
+
+.pay {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-right: 70px;
+}
+
+.pay img {
+  width: 40px;
+  height: auto;
+  margin: 10px 0;
+}
+.account {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.account a {
+  text-decoration: none;
+  color: black;
+}
+
+.account > * {
+  margin: 5px;
+}
+
+.contact > * {
+  margin: 5px;
+}
+
+.copyright p {
+  text-align: center;
+}
+
+.all_arts {
+  font-size: 3rem;
 }
