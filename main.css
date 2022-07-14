@@ -1,3 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700&family=Staatliches&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Inconsolata', monospace;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
 body {
-  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.me {
+  margin-top: 50px;
+  width: 800px;
+  height: auto;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+p {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: #caecde;
+}
+
+.col-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .footer-logo {
+  width: 100px;
+  height: auto;
+}
+
+footer .col-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.col {
+  margin-top: 50px;
+  font-size: 1.8rem;
+}
+
+.pay {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-right: 70px;
+}
+
+.pay img {
+  width: 40px;
+  height: auto;
+  margin: 10px 0;
+}
+.account {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.account a {
+  text-decoration: none;
+  color: black;
+}
+
+.account > * {
+  margin: 5px;
+}
+
+.contact > * {
+  margin: 5px;
+}
+
+.copyright p {
+  text-align: center;
 }
