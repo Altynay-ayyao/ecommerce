@@ -16,6 +16,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .center {
@@ -237,7 +238,7 @@ html {
 }
 
 img {
-  width: 250px;
+  width: 400px;
   height: auto;
   margin: 30px;
 }

@@ -19,6 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: linear-gradient(#d8eadf, white);
 }
 
 .me {
@@ -32,15 +33,23 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 80px;
 }
 
-p {
-  padding: 10px;
-  font-size: 1rem;
+/********************end of intro*******************/
+
+.intro p {
+  padding: 30px;
+  font-size: 1.2rem;
+}
+
+.intro p a {
+  color: black;
 }
 
 footer {
-  background-color: #caecde;
+  background-color: rgb(7, 11, 10);
+  color: white;
 }
 
 .col-container {
@@ -50,8 +59,11 @@ footer {
 }
 
 footer .footer-logo {
-  width: 100px;
+  width: 150px;
   height: auto;
+  margin-left: 60px;
+  margin-top: 30px;
+  cursor: pointer;
 }
 
 footer .col-container {
@@ -66,6 +78,9 @@ footer .col-container {
   font-size: 1.8rem;
 }
 
+.col p {
+  font-size: 1rem;
+}
 .pay {
   display: flex;
   align-items: flex-start;
@@ -89,9 +104,14 @@ footer .col-container {
   flex-direction: column;
 }
 
+.contact a {
+  color: white;
+}
+
 .account a {
   text-decoration: none;
-  color: black;
+  color: white;
+  font-size: 1rem;
 }
 
 .account > * {
