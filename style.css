@@ -329,12 +329,6 @@ img {
   font-size: 18px;
 }
 
-/* .form > * {
-  padding: 10px;
-  margin: 10px;
-  margin-right: 30px;
-} */
-
 .form button {
   background-color: #ff9f29;
   border: none;
@@ -411,9 +405,10 @@ footer .col-container {
   flex-direction: column;
 }
 
-.contact {
+.contact a {
   display: flex;
   flex-direction: column;
+  color: black;
 }
 
 .account a {
@@ -455,4 +450,106 @@ footer .col-container {
 
 #myBtn:hover {
   background-color: #555;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .box {
+    height: 100px;
+    width: 100px;
+  }
+
+  .card {
+    height: 100px;
+    width: 100px;
+
+    padding: 30px 0px;
+  }
+
+  #front {
+    transform: translateZ(50px);
+  }
+  #back {
+    transform: translateZ(-50px);
+  }
+
+  #left {
+    right: 50px;
+  }
+
+  #right {
+    left: 50px;
+  }
+
+  #top {
+    bottom: 50px;
+  }
+
+  #bottom {
+    top: 50px;
+  }
+
+  .new {
+    width: 250px;
+    height: auto;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: normal;
+  }
+
+  #newsletter {
+    justify-content: space-around;
+  }
+
+  #newsletter h4 {
+    margin-top: 35px;
+  }
+  #newsletter p {
+    font-size: 1.8rem;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+  footer {
+    background-color: #caecde;
+  }
+
+  .col-container {
+    justify-content: space-around;
+  }
+
+  .col {
+    margin-left: 20px;
+    font-size: 1.5rem;
+  }
+
+  .contact a {
+    color: black;
+    display: inline-block;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.635);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+
+  #myBtn:hover {
+    background-color: #555;
+  }
 }
